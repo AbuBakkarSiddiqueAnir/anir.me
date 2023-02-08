@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# anir.me
 
-## Getting Started
+[![CI](https://github.com/anir/anir.github.io/workflows/CI/badge.svg)](https://github.com/anir/anir.github.io/actions?query=workflow%3ACI+branch%3Amaster)
 
-First, run the development server:
+My personal [website](https://anir.me) with a list of my projects that help people learn and blog posts about life, web-development, and machine-learning.
+
+![anir.me](https://anir.me/static-assets/images/site-meta-image-01.png)
+
+## Development
+
+The website is built on [next js](https://www.nextjs.com/).
+
+### Running the project locally
+
+To run the project locally in development mode on [http://localhost:8000](http://localhost:8000):
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+npm run develop
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+View GraphiQL, an in-browser IDE, to explore your site's data and schema on [http://localhost:8000/___graphql](https://localhost:8000/___graphql)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+To build the production version of the project:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+```bash
+npm run build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Serve the production build for testing on [http://localhost:9000](http://localhost:9000):
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```bash
+npm run serve
+```
 
-## Learn More
+To do ESLint and Type checking:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run lint
+npm run type
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Working with icons
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Use [react-icons.github.io](https://react-icons.github.io/react-icons) to search for available icons.
 
-## Deploy on Vercel
+### Styling components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Use [tailwindcss.com](https://tailwindcss.com) to search for available CSS classes.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Custom Domain Support
+
+To serve the [anir.github.io](https://anir.github.io) web-site on a custom domain [anir.me](https://anir.me) make sure that the `public` branch has `CNAME` file in the root folder. For more details read [this](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
